@@ -1,5 +1,5 @@
 spring:
-  message: Payment Simultaion DEV
+  message: Payment DEV
 
 server:
-  port: 9091
+  port: 8082

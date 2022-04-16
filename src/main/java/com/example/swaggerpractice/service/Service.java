@@ -1,5 +1,6 @@
 package com.example.swaggerpractice.service;
 
+import com.example.swaggerpractice.model.Customer;
 import com.example.swaggerpractice.model.PaymentMethod;
 import com.example.swaggerpractice.repository.CustomerRepository;
 import com.example.swaggerpractice.repository.OrderRepository;
@@ -22,5 +23,9 @@ public class Service {
             return "Invalid payment method!";
         }
         return "Customer with id: " + customerRepository.getById(customerId) + "payed: " + orderRepository.getById(orderId).getPrice() + "with: " + PaymentMethod.CARD;
+    }
+
+    public Customer getById(Integer id){
+        return customerRepository.getById(id);
     }
 }

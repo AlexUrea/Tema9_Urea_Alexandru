@@ -1,5 +1,5 @@
 spring:
-  message: Payment Simultaion PROD
+  message: Payment PROD
 
 server:
   port: 8081
